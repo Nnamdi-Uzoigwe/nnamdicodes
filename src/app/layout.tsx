@@ -342,13 +342,13 @@ export default function RootLayout({
         `}
       >
         {/* Decorative gradients */}
-        {/* <div className="fixed inset-0 -z-10 pointer-events-none">
+        <div className="fixed inset-0 -z-10 pointer-events-none">
           <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-200 h-100">
             <div className="absolute left-0 w-75 h-75 bg-blue-400/40 dark:bg-blue-400/20 blur-3xl rounded-full" />
             <div className="absolute left-50 w-75 h-75 bg-purple-500/40 dark:bg-purple-500/20 blur-3xl rounded-full" />
             <div className="absolute left-100 w-75 h-75 bg-red-500/40 dark:bg-red-500/20 blur-3xl rounded-full" />
           </div>
-        </div> */}
+        </div>
 
         <ThemeProvider>
           <Navbar />
