@@ -48,7 +48,7 @@ export default function AboutHeader() {
       <h1 className="about-heading text-[30px] lg:text-[50px] font-bold text-gray-700 dark:text-white">
         A little bit about me
       </h1>
-      <p className="about-paragraph w-full max-w-xl text-left lg:text-center text-md lg:text-lg my-4 text-gray-600 dark:text-[#808080] font-semibold">
+      <p className="about-paragraph w-full max-w-xl text-left lg:text-center text-md lg:text-lg my-4 text-gray-600 dark:text-[#808080]">
         Who I am and what I do.
       </p>
     </div>

@@ -48,7 +48,7 @@ const StackHeader = () => {
       <h1 className="stack-heading text-[30px] lg:text-[50px] font-bold text-gray-700 dark:text-white">
         Tech Stack
       </h1>
-      <p className="stack-paragraph w-full max-w-xl text-left lg:text-center text-md lg:text-lg my-4 text-gray-600 dark:text-[#808080] font-semibold">
+      <p className="stack-paragraph w-full max-w-xl text-left lg:text-center text-md lg:text-lg my-4 text-gray-600 dark:text-[#808080]">
         The development tools, frameworks and apps I use.
       </p>
     </div>
