@@ -36,16 +36,17 @@ export default function Navbar() {
           <div className={`font-bold transition-colors duration-300 ${
             isDark ? 'text-white' : 'text-gray-900'
           }`}>
-            {"<>"}
+            <span className="text-red-600">{"<"}</span>
+            <span className="text-green-600 mr-1">{">"}</span>
             Nnamdi
           </div>
 
           {/* links */}
-          <div className={`hidden lg:flex gap-4 font-medium transition-colors duration-300 ${
+          <div className={`hidden lg:flex gap-4 transition-colors duration-300 ${
             isDark ? 'text-gray-200' : 'text-gray-800'
           }`}>
             <Link href="/about">About</Link>
-            <Link href="/about">Tech Stack</Link>
+            <Link href="/stack">Tech Stack</Link>
             <Link href="/about">Projects</Link>
             <Link href="/about">Contact</Link>
           </div>

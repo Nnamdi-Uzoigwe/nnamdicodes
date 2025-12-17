@@ -71,7 +71,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <p className="w-full max-w-xl text-left lg:text-center text-md lg:text-lg my-4 text-gray-600 dark:text-[#808080] font-semibold">
+      <p className="w-full max-w-xl text-left lg:text-center text-md lg:text-lg my-4 text-gray-600 dark:text-[#808080]">
         A frontend engineer and UI/UX designer helping startups turn their visions
         into a digital reality. I specialize in designing and building modern mobile 
         and web-based apps.

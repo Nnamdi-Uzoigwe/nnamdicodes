@@ -11,7 +11,8 @@ export default function Home() {
         <div className="mx-auto">
 
         <div className="font-bold transition-colors duration-300 text-white">
-          {"<>"}
+          <span className="text-red-600">{"<"}</span>
+            <span className="text-green-600 mr-1">{">"}</span>
           Nnamdi
         </div>
         </div>

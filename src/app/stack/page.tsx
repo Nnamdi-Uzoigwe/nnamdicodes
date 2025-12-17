@@ -1,7 +1,7 @@
-import AboutHeader from "../sections/about/AboutHeader";
-import MainContent from "../sections/about/MainContent";
+import StackContent from "../sections/stack/StackContent";
+import StackHeader from "../sections/stack/StackHeader";
 
-export default function About() {
+export default function Stack() {
   return (
     <div>
       {/* floating logo */}
@@ -15,8 +15,8 @@ export default function About() {
         </div>
       </div>
 
-      <AboutHeader />
-      <MainContent />
+      <StackHeader />
+      <StackContent />
     </div>
   );
 }

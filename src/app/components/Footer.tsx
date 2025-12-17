@@ -19,7 +19,8 @@ export default function Footer() {
                 isDark ? "text-white" : "text-gray-900"
               }`}
             >
-              {"<>"}
+              <span className="text-red-600">{"<"}</span>
+            <span className="text-green-600 mr-1">{">"}</span>
               Nnamdi
             </div>
 
