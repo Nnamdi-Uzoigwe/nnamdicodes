@@ -13,13 +13,13 @@ export default function Navbar() {
   const isDark = theme === 'dark'
 
   return (
-    <nav className="fixed bottom-8 lg:top-4 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8">
+    <nav className="fixed bottom-8 lg:top-4 left-0 right-0 z-50 px-3 lg:px-8">
       <div
         className={`
           max-w-4xl mx-auto
           backdrop-blur-md
           rounded-[14px]
-          px-6 py-4
+          px-3 lg:px-6 py-4
           transition-all duration-300
           border
           ${isDark
