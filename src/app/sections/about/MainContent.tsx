@@ -13,7 +13,7 @@ const MainContent = () => {
               <h4 className="text-lg font-bold mb-4 text-gray-800 dark:text-white">
                 WHO I AM
               </h4>
-              <p className="w-full max-w-xl my-4 text-gray-600 dark:text-[#808080] font-semibold">
+              <p className="w-full max-w-xl my-4 text-gray-600 dark:text-[#808080]">
                 My name is Nnamdi Uzoigwe. I am a software developer majoring in
                 Computer Science, based in Abuja, Nigeria.
               </p>
@@ -22,7 +22,7 @@ const MainContent = () => {
               <h4 className="text-lg font-bold mb-4 text-gray-800 dark:text-white">
                 WHAT I DO
               </h4>
-              <p className="w-full max-w-xl my-4 text-gray-600 dark:text-[#808080] font-semibold">
+              <p className="w-full max-w-xl my-4 text-gray-600 dark:text-[#808080] ">
                 I am a software developer with experience building and delivering
                 software products as a freelancer. I specialize in crafting modern,
                 scalable web applications using technologies such as React, Next.js,
@@ -34,7 +34,7 @@ const MainContent = () => {
               </p>
             </div>
 
-            <p className="w-full max-w-xl mt-10 text-gray-600 dark:text-[#808080] font-semibold">
+            <p className="w-full max-w-xl mt-10 text-gray-600 dark:text-[#808080]">
               Feel free to reach out via <span className="text-black dark:text-white underline">e-mail</span>, or follow me on <span className="text-black dark:text-white underline">Twitter</span>. Want to
               see where I've worked? Check out my <span className="text-black dark:text-white underline">Resume</span>, or Connect with me on
               <span className="text-black dark:text-white underline">LinkedIn</span>.
