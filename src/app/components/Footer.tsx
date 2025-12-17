@@ -8,7 +8,7 @@ export default function Footer() {
   const isDark = theme === "dark";
 
   return (
-    <div className="px-6 lg:px-60 py-10 pb-20 relative overflow-hidden border-t border-gray-200 dark:border-gray-800">
+    <div className="px-6 lg:px-60 py-10 pb-30 lg:pb-20 relative overflow-hidden border-t border-gray-200 dark:border-gray-800">
       <div className="flex flex-col-reverse lg:flex-row justify-between gap-8 lg:gap-0">
         {/* left */}
         <div className="col-span-1 lg:col-span-2 flex flex-col justify-between">

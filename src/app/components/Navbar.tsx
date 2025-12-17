@@ -2,15 +2,17 @@
 
 import Link from "next/link"
 import { ThemeToggle } from "./ThemeToggle"
-import { FaGithub, FaInstagram, FaXTwitter } from "react-icons/fa6"
+import { FaGithub, FaInstagram, FaRegUser, FaXTwitter } from "react-icons/fa6"
 import { useTheme } from "../context/ThemeContext"
+import { FaHome } from "react-icons/fa"
+import { BriefcaseBusiness, Layers, Mail } from "lucide-react"
 
 export default function Navbar() {
   const { theme } = useTheme()
   const isDark = theme === 'dark'
 
   return (
-    <nav className="fixed top-4 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8">
+    <nav className="fixed bottom-4 lg:top-4 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8">
       <div
         className={`
           max-w-4xl mx-auto
@@ -25,7 +27,10 @@ export default function Navbar() {
           }
         `}
       >
-        <div className="flex justify-between items-center">
+
+        
+
+        <div className="hidden lg:flex justify-between items-center">
 
           {/* logo */}
           <div className={`font-bold transition-colors duration-300 ${
@@ -62,6 +67,35 @@ export default function Navbar() {
             <ThemeToggle />
           </section>
 
+        </div>
+
+
+        {/* mobile nav */}
+        <div className="flex justify-between items-center text-gray-600 dark:text-gray-300 text-lg lg:hidden">
+          {/* home */}
+          <Link href="/">
+            <FaHome />
+          </Link>
+          {/* about */}
+          <Link href="/about">
+            <FaRegUser />
+          </Link>
+          {/* tech stack */}
+          <Link href="/stack">
+            <Layers />
+          </Link>
+          {/* work */}
+          <Link href="/works">
+            <BriefcaseBusiness />
+          </Link>
+          {/* contact */}
+          <Link href="/contact">
+            <Mail />
+          </Link>
+          <span>
+            |
+          </span>
+          <ThemeToggle />
         </div>
       </div>
     </nav>
