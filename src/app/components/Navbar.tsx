@@ -5,14 +5,15 @@ import { ThemeToggle } from "./ThemeToggle"
 import { FaGithub, FaInstagram, FaRegUser, FaXTwitter } from "react-icons/fa6"
 import { useTheme } from "../context/ThemeContext"
 import { FaHome } from "react-icons/fa"
-import { BriefcaseBusiness, Layers, Mail } from "lucide-react"
+import { BriefcaseBusiness, Layers, Mail, User } from "lucide-react"
+import { IoHomeOutline } from "react-icons/io5"
 
 export default function Navbar() {
   const { theme } = useTheme()
   const isDark = theme === 'dark'
 
   return (
-    <nav className="fixed bottom-4 lg:top-4 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8">
+    <nav className="fixed bottom-8 lg:top-4 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8">
       <div
         className={`
           max-w-4xl mx-auto
@@ -74,24 +75,29 @@ export default function Navbar() {
         {/* mobile nav */}
         <div className="flex justify-between items-center text-gray-600 dark:text-gray-300 text-lg lg:hidden">
           {/* home */}
-          <Link href="/">
-            <FaHome />
+          <Link href="/" className="flex flex-col items-center">
+            <IoHomeOutline size={24} />
+            <p className="text-xs">Home</p>
           </Link>
           {/* about */}
-          <Link href="/about">
-            <FaRegUser />
+          <Link href="/about" className="flex flex-col items-center">
+            <User size={24} />
+            <p className="text-xs">About</p>
           </Link>
           {/* tech stack */}
-          <Link href="/stack">
+          <Link href="/stack" className="flex flex-col items-center">
             <Layers />
+            <p className="text-xs">Tech Stack</p>
           </Link>
           {/* work */}
-          <Link href="/works">
+          <Link href="/works" className="flex flex-col items-center">
             <BriefcaseBusiness />
+            <div className="text-xs">Works</div>
           </Link>
           {/* contact */}
-          <Link href="/contact">
+          <Link href="/contact" className="flex flex-col items-center">
             <Mail />
+            <div className="text-sm">Contact</div>
           </Link>
           <span>
             |

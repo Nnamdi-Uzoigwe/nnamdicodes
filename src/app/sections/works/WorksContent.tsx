@@ -1,16 +1,7 @@
-'use client'
-
-import { useEffect, useRef } from 'react'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import ProjectCard from "@/app/components/home/ProjectCard"
-import WhiteButton from '@/app/components/WhiteButton'
-import BlackButton from '@/app/components/BlackButton'
 
-const SelectedProjects = () => {
-  const sectionRef = useRef<HTMLDivElement>(null)
-
-  const projectsData = [
+const WorksContent = () => {
+    const projectsData = [
     {
       id: 1,
       title: "StudySpark Web App - The AI Study Assistant",
@@ -34,38 +25,9 @@ const SelectedProjects = () => {
     },
   ]
 
-  useEffect(() => {
-    if (!sectionRef.current) return
-
-    gsap.registerPlugin(ScrollTrigger)
-
-    const cards = sectionRef.current.querySelectorAll('.project-card-wrapper')
-
-    cards.forEach((card) => {
-      gsap.fromTo(
-        card,
-        { y: 30, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.8,
-          ease: 'power2.out',
-          scrollTrigger: {
-            trigger: card,
-            start: 'top 90%', // start when the card reaches 90% of viewport height
-            toggleActions: 'play none none none',
-          },
-        }
-      )
-    })
-  }, [])
-
   return (
-    <div ref={sectionRef} className="px-6 lg:px-60 pb-20 will-change-transform">
-      <h1 className="text-[25px] mb-8 lg:text-[37px] font-semibold text-gray-700 dark:text-white">
-        Selected Work
-      </h1>
-      <div className="flex flex-col gap-4">
+    <div className="border-t border-gray-200 dark:border-gray-800 py-10 px-6 lg:px-60">
+        <div className="flex flex-col gap-4">
         {projectsData.map((item) => (
           <div key={item.id} className="project-card-wrapper">
             <ProjectCard
@@ -77,12 +39,8 @@ const SelectedProjects = () => {
           </div>
         ))}
       </div>
-
-      <div className='mt-4 flex justify-center'>
-        <BlackButton text="See More" icon="" />
-      </div>
     </div>
   )
 }
 
-export default SelectedProjects
+export default WorksContent
