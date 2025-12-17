@@ -49,7 +49,7 @@ export default function RootLayout({
           <ScrollWrapper>
           {children}
           </ScrollWrapper>
-          {/* <Footer /> */}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

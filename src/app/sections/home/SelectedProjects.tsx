@@ -4,6 +4,8 @@ import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import ProjectCard from "@/app/components/home/ProjectCard"
+import WhiteButton from '@/app/components/WhiteButton'
+import BlackButton from '@/app/components/BlackButton'
 
 const SelectedProjects = () => {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -74,6 +76,10 @@ const SelectedProjects = () => {
             />
           </div>
         ))}
+      </div>
+
+      <div className='mt-4 flex justify-center'>
+        <BlackButton text="See More" icon="" />
       </div>
     </div>
   )

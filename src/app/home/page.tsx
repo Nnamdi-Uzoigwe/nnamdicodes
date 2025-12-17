@@ -1,4 +1,6 @@
+import GetToKnowMe from "../sections/home/GetToKnowMe";
 import Hero from "../sections/home/Hero";
+import LetsWork from "../sections/home/LetsWork";
 import SelectedProjects from "../sections/home/SelectedProjects";
 
 export default function Home() {
@@ -6,6 +8,8 @@ export default function Home() {
         <div>
            <Hero />
            <SelectedProjects />
+           <GetToKnowMe />
+           <LetsWork />
         </div>
     )
 }
