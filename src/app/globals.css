@@ -2,3 +2,12 @@
 
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+
+/* input[type="text"],
+input[type="email"],
+input[type="password"],
+input {
+  overflow: visible !important;
+  overflow-clip-margin: unset !important;
+} */
