@@ -14,14 +14,14 @@ const SelectedProjects = () => {
     {
       id: 1,
       title: "StudySpark Web App - The AI Study Assistant",
-      logo: "/subbilogo.png",
+      logo: "/studySparkLogo.png",
       description: "StudySpark app is an AI-powered web application designed to help students study smarter by combining real-time chat support with personalized course recommendations. The platform integrates advanced natural language processing through the Groq API, enabling students to ask questions, receive instant explanations, and get tailored academic guidance while they learn.",
       image: "/StudySpark.png"
     },
     {
       id: 2,
       title: "Fluorish Fuel Station Application",
-      logo: "/React.png",
+      logo: "/station-logo.png",
       description: "Still in progress. A role-based web application built to streamline filling station operations. It provides dashboards for managers, cashiers, accountants, supervisors, and attendants to record fuel sales, manage pumps, track lubricant purchases, and monitor stock. The system aims to reduce manual processes and improve operational visibility, and is currently under active development.",
       image: "/FillingStationImg.png"
     },
@@ -29,7 +29,7 @@ const SelectedProjects = () => {
       id: 3,
       title: "Stain Website Landing Page",
       logo: "/storybook.png",
-      description: "This was my very first OSS contribution, I contributed to translating the documentation of Storybook into Arabic, enabling a wider audience to access and understand the resources available. I gained valuable experience in working effectively with teams and navigating the pull request process.",
+      description: "Stain is a modern SaaS website design that I implemented using Vue 3 with the Composition API and Tailwind CSS. The project showcases my ability to translate a professional Figma concept into a fully responsive, production-ready front-end.",
       image: "/StainLandingImg.png"
     },
   ]

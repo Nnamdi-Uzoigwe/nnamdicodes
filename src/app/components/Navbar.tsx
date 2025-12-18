@@ -48,8 +48,8 @@ export default function Navbar() {
           }`}>
             <Link href="/about">About</Link>
             <Link href="/stack">Tech Stack</Link>
-            <Link href="/about">Projects</Link>
-            <Link href="/about">Contact</Link>
+            <Link href="/works">Work</Link>
+            <Link href="/contact">Contact</Link>
           </div>
 
           <section className="flex items-center gap-2">
@@ -77,27 +77,27 @@ export default function Navbar() {
           {/* home */}
           <Link href="/" className="flex flex-col items-center">
             <IoHomeOutline size={24} />
-            <p className="text-xs">Home</p>
+            <p className="text-[10px]">Home</p>
           </Link>
           {/* about */}
           <Link href="/about" className="flex flex-col items-center">
             <User size={24} />
-            <p className="text-xs">About</p>
+            <p className="text-[10px]">About</p>
           </Link>
           {/* tech stack */}
           <Link href="/stack" className="flex flex-col items-center">
             <Layers />
-            <p className="text-xs">Tech Stack</p>
+            <p className="text-[10px]">Tech Stack</p>
           </Link>
           {/* work */}
           <Link href="/works" className="flex flex-col items-center">
             <BriefcaseBusiness />
-            <div className="text-xs">Works</div>
+            <div className="text-[10px]">Work</div>
           </Link>
           {/* contact */}
           <Link href="/contact" className="flex flex-col items-center">
             <Mail />
-            <div className="text-sm">Contact</div>
+            <div className="text-[10px]">Contact</div>
           </Link>
           <span>
             |
