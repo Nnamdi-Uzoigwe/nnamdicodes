@@ -65,7 +65,7 @@ const MainContent = () => {
               WHO I AM
             </h4>
             <p className="w-full max-w-xl my-4 text-gray-600 dark:text-[#808080]">
-              My name is Nnamdi Uzoigwe. I am a software developer majoring in
+              My name is Nnamdi Uzoigwe. I am a software developer with a Bachelor's degree in
               Computer Science, based in Abuja, Nigeria.
             </p>
           </div>

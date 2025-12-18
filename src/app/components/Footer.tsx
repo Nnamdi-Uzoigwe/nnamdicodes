@@ -14,22 +14,32 @@ export default function Footer() {
         <div className="col-span-1 lg:col-span-2 flex flex-col justify-between">
           <div>
             {/* logo */}
-            <div
-              className={`font-bold text-xl mb-2 transition-colors duration-300 ${
-                isDark ? "text-white" : "text-gray-900"
-              }`}
+               <div
+            style={{ fontFamily: "var(--font-poppins)" }}
+            className="font-bold text-xl transition-colors text-dark-900 dark:text-white duration-300"
+          >
+            NC
+            <span
+              style={{ fontFamily: "var(--font-inter)" }}
+              className="font-bold text-indigo-500"
             >
-              <span className="text-red-600">{"<"}</span>
-            <span className="text-green-600 mr-1">{">"}</span>
-              Nnamdi
-            </div>
+              {" "}
+              {">_"}
+            </span>
+          </div>
 
             <p className="text-[#808080]">Thanks for stopping by ッ</p>
           </div>
 
+          <div>
+
           <p className="text-[#808080]">
             &copy; 2025 Nnamdi Uzoigwe. All Rights Reserved
           </p>
+          <p className="text-[#808080] text-sm mt-1">
+            Design inspired by <span className="font-semibold">Eihab Khan</span> @ Figma.🖤
+          </p>
+          </div>
         </div>
 
         {/* right */}

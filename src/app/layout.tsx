@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./context/ThemeContext";
 
@@ -11,6 +11,12 @@ import ScrollWrapper from "./components/ScrollWrapper";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
@@ -28,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} antialiased 
+        className={`${inter.variable} ${poppins.variable} antialiased 
         bg-white dark:bg-[#0d0d0d] transition-colors duration-300`}
       >
         {/* Background gradient effects */}
@@ -55,37 +61,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-// export default function RootLayout({
-//   children,
-// }: {
-//   children: React.ReactNode
-// }) {
-//   return (
-//     <html lang="en" suppressHydrationWarning>
-//       <body
-//         className={`
-//           ${manrope.variable}
-//           antialiased
-//           min-h-screen
-//           bg-white dark:bg-[#0d0d0d]
-//           transition-colors duration-300
-//         `}
-//       >
-//         {/* Decorative gradients */}
-//         <div className="fixed inset-0 -z-10 pointer-events-none">
-//           <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-200 h-100">
-//             <div className="absolute left-0 w-75 h-75 bg-blue-400/40 dark:bg-blue-400/20 blur-3xl rounded-full" />
-//             <div className="absolute left-50 w-75 h-75 bg-purple-500/40 dark:bg-purple-500/20 blur-3xl rounded-full" />
-//             <div className="absolute left-100 w-75 h-75 bg-red-500/40 dark:bg-red-500/20 blur-3xl rounded-full" />
-//           </div>
-//         </div>
-
-//         <ThemeProvider>
-//           <Navbar />
-//           {children}
-//         </ThemeProvider>
-//       </body>
-//     </html>
-//   )
-// }

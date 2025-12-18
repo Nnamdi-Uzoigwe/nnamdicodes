@@ -9,15 +9,21 @@ export default function Home() {
       {/* floating logo */}
       <div className="flex lg:hidden z-50 fixed top-4 left-0 right-0">
         <div className="mx-auto">
-
-        <div className="font-bold transition-colors duration-300 text-white">
-          <span className="text-red-600">{"<"}</span>
-            <span className="text-green-600 mr-1">{">"}</span>
-          Nnamdi
-        </div>
+          <div
+            style={{ fontFamily: "var(--font-poppins)" }}
+            className="font-bold transition-colors text-dark-900 dark:text-white duration-300"
+          >
+            NC
+            <span
+              style={{ fontFamily: "var(--font-inter)" }}
+              className="font-bold text-indigo-500"
+            >
+              {" "}
+              {">_"}
+            </span>
+          </div>
         </div>
       </div>
-
 
       <Hero />
       <SelectedProjects />

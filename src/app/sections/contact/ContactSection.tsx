@@ -8,7 +8,7 @@ export default function ContactSection() {
   return (
     <div className="border-t border-gray-200 dark:border-gray-800 py-10 px-6 lg:px-60">
       {/* form */}
-      <form className="w-full bg-[#F6F6F6] shadow-lg rounded-xl dark:bg-[#181818] p-8">
+      <form className="w-full bg-[#F6F6F6] shadow-lg rounded-xl dark:bg-[#181818] p-4 lg:p-8">
         <header className=" flex items-center border-b pb-4 border-gray-200 dark:border-gray-700">
           <div className="flex gap-2">
             <div className="w-2 lg:w-3 h-2 lg:h-3 rounded-full bg-[#F63636]" />
