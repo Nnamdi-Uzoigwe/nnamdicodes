@@ -51,10 +51,11 @@ export default function Footer() {
           </h4>
 
           <div className="flex flex-col text-gray-500 dark:text-gray-200 gap-2 items-start lg:items-end">
-            <Link href="">About</Link>
-            <Link href="">Work</Link>
-            <Link href="">Tech Stack</Link>
-            <Link href="">Contact</Link>
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/works">Work</Link>
+            <Link href="/stack">Tech Stack</Link>
+            <Link href="/contact">Contact</Link>
           </div>
         </div>
 

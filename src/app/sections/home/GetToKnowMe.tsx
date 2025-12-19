@@ -15,13 +15,15 @@ export default function GetToKnowMe() {
       id: 1,
       title: "About Me",
       description: "Who I am and what I do",
-      image: "/memoji.png"
+      image: "/memoji.png",
+      link: "/about"
     },
     {
       id: 2,
       title: "Tech Stack",
       description: "The dev tools, frameworks, and apps I use",
-      image: "/stack.png"
+      image: "/stack.png",
+      link: "/stack"
     }
   ]
 
@@ -59,6 +61,7 @@ export default function GetToKnowMe() {
               title={item.title}
               description={item.description}
               image={item.image}
+              link={item.link}
             />
           </div>
         ))}

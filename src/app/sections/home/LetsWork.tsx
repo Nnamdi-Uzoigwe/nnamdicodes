@@ -5,6 +5,7 @@ import { SendHorizonal } from 'lucide-react'
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Link from 'next/link'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -45,9 +46,9 @@ const LetsWork = () => {
       </div>
 
       {/* Button */}
-      <div className="lets-work-item w-full lg:w-fit">
+      <Link href="/contact" className="lets-work-item w-full lg:w-fit">
         <WhiteButton text="Get in touch" icon={<SendHorizonal />} />
-      </div>
+      </Link>
     </div>
   )
 }

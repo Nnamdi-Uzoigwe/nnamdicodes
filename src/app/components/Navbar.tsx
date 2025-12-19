@@ -2,9 +2,8 @@
 
 import Link from "next/link"
 import { ThemeToggle } from "./ThemeToggle"
-import { FaGithub, FaInstagram, FaRegUser, FaXTwitter } from "react-icons/fa6"
+import { FaGithub, FaInstagram, FaXTwitter } from "react-icons/fa6"
 import { useTheme } from "../context/ThemeContext"
-import { FaHome } from "react-icons/fa"
 import { BriefcaseBusiness, Layers, Mail, User } from "lucide-react"
 import { IoHomeOutline } from "react-icons/io5"
 
@@ -30,30 +29,21 @@ export default function Navbar() {
         `}
       >
 
-        
-
         <div className="hidden lg:flex justify-between items-center">
 
-          {/* logo
-          <div className={`font-bold transition-colors duration-300 ${
-            isDark ? 'text-white' : 'text-gray-900'
-          }`}>
-            <span className="text-red-600">{"<"}</span>
-            <span className="text-green-600 mr-1">{">"}</span>
-            Nnamdi
-          </div> */}
           {/* logo */}
-          <div style={{ fontFamily: "var(--font-poppins)" }} className={`font-bold transition-colors duration-300 ${
+          <Link href="/" style={{ fontFamily: "var(--font-poppins)" }} className={`font-bold transition-colors duration-300 ${
             isDark ? 'text-white' : 'text-gray-900'
           }`}>
             NC
             <span style={{ fontFamily: "var(--font-inter)" }} className="font-bold text-indigo-500">{" "}{">_"}</span>
-          </div>
+          </Link>
 
           {/* links */}
           <div className={`hidden lg:flex gap-4 transition-colors duration-300 ${
             isDark ? 'text-gray-200' : 'text-gray-800'
           }`}>
+            <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             <Link href="/stack">Tech Stack</Link>
             <Link href="/works">Work</Link>

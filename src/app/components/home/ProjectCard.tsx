@@ -17,7 +17,7 @@ const ProjectCard = ({logo, title, description, image}: projectCardProps) => {
         <div className="bg-white px-2 dark:bg-white/80 border border-gray-300 dark:border-[#888]  shadow-inner rounded-xl h-20 flex justify-center items-center w-fit ">
         <Image src={logo} alt="react logo" width={70} height={70} />
         </div>
-        <h2 className="font-semibold text-xl lg:text-2xl text-gray-800 dark:text-white">
+        <h2 className="font-semibold text-xl my-1 lg:text-2xl text-gray-800 dark:text-white">
           {title}
         </h2>
         <p className="text-[#808080] text-sm">

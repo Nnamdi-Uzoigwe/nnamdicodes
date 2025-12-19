@@ -6,6 +6,7 @@ import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -88,8 +89,7 @@ const MainContent = () => {
 
           <p className="main-text w-full max-w-xl mt-10 text-gray-600 dark:text-[#808080]">
             Feel free to reach out via <span className="text-black dark:text-white underline">e-mail</span>, or follow me on <span className="text-black dark:text-white underline">Twitter</span>. Want to
-            see where I've worked? Check out my <span className="text-black dark:text-white underline">Resume</span>, or Connect with me on
-            <span className="text-black dark:text-white underline">LinkedIn</span>.
+            see where I've worked? Check out my <span className="text-black dark:text-white underline">Resume</span>, or Connect with me on <span className="text-black dark:text-white underline">LinkedIn</span>.
           </p>
         </section>
 
@@ -98,9 +98,9 @@ const MainContent = () => {
         </div>
       </div>
 
-      <div className="main-button mt-10 flex justify-center lg:justify-end">
+      <Link href="/contact" className="main-button mt-10 flex justify-center lg:justify-end">
         <BlackButton text="Get In Touch" icon={<SendHorizonal />} />
-      </div>
+      </Link>
     </div>
   );
 };

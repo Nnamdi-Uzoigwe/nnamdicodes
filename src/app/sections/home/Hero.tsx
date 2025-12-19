@@ -34,6 +34,7 @@ import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import BlackButton from "@/app/components/BlackButton"
 import WhiteButton from "@/app/components/WhiteButton"
+import Link from 'next/link'
 
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null)
@@ -79,7 +80,9 @@ export default function Hero() {
 
       <div className="mt-3 w-full lg:w-fit flex flex-col lg:flex-row gap-2">
         <BlackButton text="See My Resume" icon="" />
-        <WhiteButton text="Get in touch" icon="" />
+        <Link href="/contact">
+          <WhiteButton text="Get in touch" icon="" />
+        </Link>
       </div>
     </div>
   )

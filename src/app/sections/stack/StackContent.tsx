@@ -1,9 +1,17 @@
 'use client'
 
 import StackCard from "@/app/components/stack/StackCard";
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 const StackContent = () => {
+  const cardsRef = useRef<HTMLDivElement[]>([]);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+
   const stackData = [
     { id: 1, name: "Next.js", brief: "Web Framework", alt: "Next.js logo", image: "/Nextjs.png" },
     { id: 2, name: "Typescript", brief: "Language", alt: "Typescript logo", image: "/typescript.png" },
@@ -23,19 +31,78 @@ const StackContent = () => {
     { id: 16, name: "React Native", brief: "App Framework", alt: "React Native logo", image: "/React.png" },
   ];
 
+   useEffect(() => {
+    // Animate title
+    gsap.fromTo(
+      titleRef.current,
+      { opacity: 0, y: -30 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        scrollTrigger: {
+          trigger: titleRef.current,
+          start: "top 80%",
+          toggleActions: "play none none reverse"
+        }
+      }
+    );
+
+    // Animate each card individually as it comes into view
+    cardsRef.current.forEach((card) => {
+      gsap.fromTo(
+        card,
+        {
+          opacity: 0,
+          y: 60,
+          scale: 0.95
+        },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 0.7,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: card,
+            start: "top 90%",
+            end: "top 20%",
+            toggleActions: "play none none reverse"
+          }
+        }
+      );
+    });
+
+    // Cleanup
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
+  }, []);
+
   return (
-    <div className="border-t border-gray-200 dark:border-gray-800 py-10 px-6 lg:px-60">
-      <h4 className="text-[#808080] text-2xl font-bold mb-8">Dev & Design</h4>
+    <div className="border-t border-gray-200 dark:border-gray-800 py-10 px-6 lg:px-60 min-h-screen">
+      <h4 
+        ref={titleRef}
+        className="text-[#808080] text-2xl font-bold mb-8"
+      >
+        Dev & Design
+      </h4>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {stackData.map((item) => (
-          <StackCard
+        {stackData.map((item, index) => (
+          <div
             key={item.id}
-            name={item.name}
-            brief={item.brief}
-            alt={item.alt}
-            image={item.image}
-          />
+            ref={(el) => {
+              if (el) cardsRef.current[index] = el;
+            }}
+          >
+            <StackCard
+              name={item.name}
+              brief={item.brief}
+              alt={item.alt}
+              image={item.image}
+            />
+          </div>
         ))}
       </div>
     </div>
@@ -43,5 +110,3 @@ const StackContent = () => {
 };
 
 export default StackContent;
-
-

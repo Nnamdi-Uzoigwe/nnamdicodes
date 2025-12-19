@@ -6,12 +6,13 @@ interface flashCardProps {
   title: string;
   description: string;
   image: string;
+  link: string
 }
 
-const FlashCard = ({ title, description, image }: flashCardProps) => {
+const FlashCard = ({ title, description, image, link }: flashCardProps) => {
   return (
     <Link
-      href=""
+      href={link}
       className="bg-[#f6f6f6] transition-transform duration-200 ease-in-out hover:scale-105 dark:bg-[#181818] flex flex-col justify-between items-center border pt-8 rounded-[20px] border-gray-200 dark:border-[#383737] overflow-hidden"
     >
       {/* Text section */}
@@ -24,7 +25,7 @@ const FlashCard = ({ title, description, image }: flashCardProps) => {
 
       {/* Image section */}
       <div className="relative w-full h-100">
-        <Image src={image} alt="image" fill className="object-cover" />
+        <Image src={image} alt="image" fill className="object-contain lg:object-cover" />
       </div>
     </Link>
   );

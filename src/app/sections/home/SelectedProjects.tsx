@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import ProjectCard from "@/app/components/home/ProjectCard"
 import WhiteButton from '@/app/components/WhiteButton'
 import BlackButton from '@/app/components/BlackButton'
+import Link from 'next/link'
 
 const SelectedProjects = () => {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -28,7 +29,7 @@ const SelectedProjects = () => {
     {
       id: 3,
       title: "Stain Website Landing Page",
-      logo: "/storybook.png",
+      logo: "/stain-logo.svg",
       description: "Stain is a modern SaaS website design that I implemented using Vue 3 with the Composition API and Tailwind CSS. The project showcases my ability to translate a professional Figma concept into a fully responsive, production-ready front-end.",
       image: "/StainLandingImg.png"
     },
@@ -78,9 +79,9 @@ const SelectedProjects = () => {
         ))}
       </div>
 
-      <div className='mt-4 flex justify-center'>
+      <Link href="/works" className='mt-4 flex justify-center'>
         <BlackButton text="See More" icon="" />
-      </div>
+      </Link>
     </div>
   )
 }
