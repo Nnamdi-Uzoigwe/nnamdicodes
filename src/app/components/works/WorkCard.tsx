@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa6";
 import Label from "./Label";
+import Link from "next/link";
 
 interface WorkCardProps {
   title: string;
@@ -10,6 +11,8 @@ interface WorkCardProps {
   description: string;
   image: string;
   stack: string[];
+  gitLink: string;
+  url: string
 }
 
 const WorkCard = ({
@@ -18,6 +21,8 @@ const WorkCard = ({
   description,
   image,
   stack,
+  gitLink,
+  url
 }: WorkCardProps) => {
   return (
     <div className="bg-[#f6f6f6] h-auto  lg:max-h-200 overflow-hidden dark:bg-[#181818] border px-8 pt-8 pb-8 lg:pb-8 border-gray-200 rounded-[20px] dark:border-[#383737] flex flex-col gap-8 lg:gap-2 lg:flex-row">
@@ -39,12 +44,18 @@ const WorkCard = ({
         </div>
 
         <div className="flex gap-4 text-gray-800 dark:text-white">
-          <span className="flex gap-1 border border-gray-400 p-2 rounded-lg items-center">
+          <Link
+            href={url} 
+            target="_blank"
+            className="flex gap-1 border border-gray-400 hover:bg-[#111] hover:text-white hover:border-black hover:dark:border-gray-400 hover:dark:scale-105 transition-all duration-200 p-2 rounded-lg items-center">
             View Live <ExternalLink size={18} />
-          </span>
-          <span className="flex gap-1 border border-gray-400 p-2 rounded-lg items-center">
+          </Link>
+          <Link 
+            href={gitLink}
+            target="_blank"
+            className="flex gap-1 border border-gray-400 hover:bg-[#111] hover:text-white hover:border-black hover:dark:border-gray-400 hover:dark:scale-105 transition-all duration-200 p-2 rounded-lg items-center">
             View Code <FaGithub />
-          </span>
+          </Link>
         </div>
       </div>
 

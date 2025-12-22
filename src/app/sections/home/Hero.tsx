@@ -79,7 +79,9 @@ export default function Hero() {
       </p>
 
       <div className="mt-3 w-full lg:w-fit flex flex-col lg:flex-row gap-2">
-        <BlackButton text="See My Resume" icon="" />
+        <Link href="/UZOIGWE-NNAMDI-CV.pdf" target="_blank" rel="noopener noreferrer">
+          <BlackButton text="See My Resumé" icon="" />
+        </Link>
         <Link href="/contact">
           <WhiteButton text="Get in touch" icon="" />
         </Link>

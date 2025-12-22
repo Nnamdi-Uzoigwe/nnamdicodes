@@ -17,21 +17,27 @@ const SelectedProjects = () => {
       title: "StudySpark Web App - The AI Study Assistant",
       logo: "/studySparkLogo.png",
       description: "StudySpark app is an AI-powered web application designed to help students study smarter by combining real-time chat support with personalized course recommendations. The platform integrates advanced natural language processing through the Groq API, enabling students to ask questions, receive instant explanations, and get tailored academic guidance while they learn.",
-      image: "/StudySpark.png"
+      image: "/StudySpark.png",
+      gitLink: "https://github.com/Nnamdi-Uzoigwe/StudySpark-App",
+      url: "https://study-spark-app.vercel.app/"
     },
     {
       id: 2,
       title: "Fluorish Fuel Station Application",
       logo: "/station-logo.png",
       description: "Still in progress. A role-based web application built to streamline filling station operations. It provides dashboards for managers, cashiers, accountants, supervisors, and attendants to record fuel sales, manage pumps, track lubricant purchases, and monitor stock. The system aims to reduce manual processes and improve operational visibility, and is currently under active development.",
-      image: "/FillingStationImg.png"
+      image: "/FillingStationImg.png",
+      gitLink: "https://github.com/tgtech123/Filling-Station-system",
+      url: "https://filling-station-system.vercel.app/"
     },
     {
       id: 3,
       title: "Stain Website Landing Page",
       logo: "/stain-logo.svg",
       description: "Stain is a modern SaaS website design that I implemented using Vue 3 with the Composition API and Tailwind CSS. The project showcases my ability to translate a professional Figma concept into a fully responsive, production-ready front-end.",
-      image: "/StainLandingImg.png"
+      image: "/StainLandingImg.png",
+      gitLink: "https://github.com/Nnamdi-Uzoigwe/Stain-website",
+      url: "https://stain-website.vercel.app/"
     },
   ]
 
@@ -74,6 +80,8 @@ const SelectedProjects = () => {
               description={item.description}
               image={item.image}
               logo={item.logo}
+              gitLink={item.gitLink}
+              url={item.url}
             />
           </div>
         ))}

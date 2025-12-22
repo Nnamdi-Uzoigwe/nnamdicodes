@@ -65,10 +65,10 @@ export default function Footer() {
           </h4>
 
           <div className="flex flex-col text-gray-500 dark:text-gray-200 gap-2 items-start lg:items-end">
-            <Link href="">Email</Link>
-            <Link href="">Twitter</Link>
-            <Link href="">Github</Link>
-            <Link href="">Linkedin</Link>
+            <Link href="mailto:uzonnamdi31@gmail.com" target="_blank">Email</Link>
+            <Link href="https://x.com/Nnamdiuzo2" target="_blank">Twitter</Link>
+            <Link href="https://github.com/Nnamdi-Uzoigwe" target="_blank">Github</Link>
+            <Link href="/">Linkedin</Link>
           </div>
         </div>
 
