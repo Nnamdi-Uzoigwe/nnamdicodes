@@ -73,9 +73,7 @@ export default function Hero() {
       </div>
 
       <p className="w-full max-w-xl text-left lg:text-center text-md lg:text-lg my-4 text-gray-600 dark:text-[#808080]">
-        A frontend engineer and UI/UX designer helping startups turn their visions
-        into a digital reality. I specialize in designing and building modern mobile 
-        and web-based apps.
+        From responsive websites to mobile apps, I create digital products that are fast, intuitive, and built to scale - delivering experiences that delight users and drive real impact.
       </p>
 
       <div className="mt-3 w-full lg:w-fit flex flex-col lg:flex-row gap-2">
