@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Philosopher, Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./context/ThemeContext";
 
@@ -8,15 +8,16 @@ import Footer from "./components/Footer";
 import ScrollWrapper from "./components/ScrollWrapper";
 
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
 
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-poppins",
+});
+const philosopher = Philosopher({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-philosopher",
 });
 
 export const metadata: Metadata = {
@@ -34,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${poppins.variable} antialiased 
+        className={`${philosopher.variable} ${poppins.variable} font-philosopher antialiased 
         bg-white dark:bg-[#0d0d0d] transition-colors duration-300`}
       >
         {/* Background gradient effects */}
