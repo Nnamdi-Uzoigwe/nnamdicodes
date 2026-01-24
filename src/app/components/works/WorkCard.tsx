@@ -43,17 +43,17 @@ const WorkCard = ({
           ))}
         </div>
 
-        <div className="flex gap-4 text-gray-800 dark:text-white">
+        <div className="flex flex-col sm:flex-row gap-4 text-gray-800 dark:text-white">
           <Link
             href={url} 
             target="_blank"
-            className="flex gap-1 border border-gray-400 hover:bg-[#111] hover:text-white hover:border-black hover:dark:border-gray-400 hover:dark:scale-105 transition-all duration-200 p-2 rounded-lg items-center">
+            className="flex gap-1 active:scale-95 justify-center border border-gray-400 hover:bg-[#111] hover:text-white hover:border-black hover:dark:border-gray-400 hover:dark:scale-105 transition-all duration-200 p-2 rounded-lg items-center">
             View Live <ExternalLink size={18} />
           </Link>
           <Link 
             href={gitLink}
             target="_blank"
-            className="flex gap-1 border border-gray-400 hover:bg-[#111] hover:text-white hover:border-black hover:dark:border-gray-400 hover:dark:scale-105 transition-all duration-200 p-2 rounded-lg items-center">
+            className="flex active:scale-95 justify-center gap-1 border border-gray-400 hover:bg-[#111] hover:text-white hover:border-black hover:dark:border-gray-400 hover:dark:scale-105 transition-all duration-200 p-2 rounded-lg items-center">
             View Code <FaGithub />
           </Link>
         </div>

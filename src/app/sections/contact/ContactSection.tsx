@@ -190,6 +190,14 @@ export default function ContactSection() {
     }
   };
 
+
+  const isFormValid =
+  formData.email.trim() !== "" &&
+  formData.name.trim() !== "" &&
+  formData.subject.trim() !== "" &&
+  formData.message.trim() !== "";
+
+
   return (
     <div className="border-t border-gray-200 dark:border-gray-800 py-10 px-6 lg:px-60">
       {/* form */}
@@ -279,7 +287,7 @@ export default function ContactSection() {
 
         <div className="flex justify-start lg:justify-end">
             <button 
-              disabled={isSubmitting}
+              disabled={!isFormValid || isSubmitting}
               onClick={handleSubmit}
               ref={buttonRef}
               type="button"
