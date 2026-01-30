@@ -14,12 +14,12 @@ const SelectedProjects = () => {
   const projectsData = [
     {
       id: 1,
-      title: "StudySpark Web App - The AI Study Assistant",
-      logo: "/studySparkLogo.png",
-      description: "StudySpark app is an AI-powered web application designed to help students study smarter by combining real-time chat support with personalized course recommendations. The platform integrates advanced natural language processing through the Groq API, enabling students to ask questions, receive instant explanations, and get tailored academic guidance while they learn.",
-      image: "/StudySpark.png",
-      gitLink: "https://github.com/Nnamdi-Uzoigwe/StudySpark-App",
-      url: "https://study-spark-app.vercel.app/"
+      title: "Novtryx Official Website",
+      logo: "/novtryxLogo.png",
+      description: "Novtryx is a software development company website designed to showcase modern web and mobile solutions. The site focuses on clean UI, clear service presentation, and smooth user experience, reflecting the company’s commitment to building reliable, scalable digital products.",
+      image: "/novtryxImg.png",
+      gitLink: "https://github.com/novtryx/novtryx-website",
+      url: "https://www.novtryx.com"
     },
     {
       id: 2,
