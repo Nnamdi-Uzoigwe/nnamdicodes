@@ -7,6 +7,7 @@ export default function Footer() {
   const { theme } = useTheme();
   const isDark = theme === "dark";
 
+  const currentYear = new Date().getFullYear();
   return (
     <div className="px-6 lg:px-60 py-10 pb-30 lg:pb-20 relative overflow-hidden border-t border-gray-200 dark:border-gray-800">
       <div className="flex flex-col-reverse lg:flex-row justify-between gap-8 lg:gap-0">
@@ -34,7 +35,7 @@ export default function Footer() {
           <div>
 
           <p className="text-[#808080]">
-            &copy; 2025 Nnamdi Uzoigwe. All Rights Reserved
+            &copy; {currentYear} Nnamdi Uzoigwe. All Rights Reserved
           </p>
           <p className="text-[#808080] text-sm mt-1">
             Design inspired by <span className="font-semibold">Eihab Khan</span> @ Figma.🖤

@@ -43,7 +43,7 @@ const ProjectCard = ({logo, title, description, image, url, gitLink}: projectCar
       </div>
 
 
-      <div className="hidden lg:flex">
+      <div className="hidden lg:block w-full">
         <Image src={image} height={300} width={400} alt="subby image"/>
       </div>
     </div>
