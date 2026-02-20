@@ -28,7 +28,7 @@ const WorkCard = ({
     <div className="bg-[#f6f6f6] h-auto  lg:max-h-200 overflow-hidden dark:bg-[#181818] border px-8 pt-8 pb-8 lg:pb-8 border-gray-200 rounded-[20px] dark:border-[#383737] grid grid-cols-1 lg:grid-cols-2 gap-6">
       <div className="flex flex-col w-full  gap-8">
         <div>
-          <div className="bg-white dark:bg-white/80 border border-gray-300 dark:border-[#888]  shadow-inner rounded-xl h-17.5 flex justify-center items-center w-17.5 ">
+          <div className="bg-white dark:bg-white/80 border border-gray-300 dark:border-[#888] overflow-hidden shadow-inner rounded-xl h-17.5 flex justify-center items-center w-17.5 ">
             <Image src={logo} alt="react logo" width={70} height={70} />
           </div>
           <h2 className="font-semibold my-1 text-xl lg:text-2xl text-gray-800 dark:text-white">

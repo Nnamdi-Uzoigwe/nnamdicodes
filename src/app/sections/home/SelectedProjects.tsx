@@ -32,12 +32,12 @@ const SelectedProjects = () => {
     },
     {
       id: 3,
-      title: "Stain Website Landing Page",
-      logo: "/stain-logo.svg",
-      description: "Stain is a modern SaaS website design that I implemented using Vue 3 with the Composition API and Tailwind CSS. The project showcases my ability to translate a professional Figma concept into a fully responsive, production-ready front-end.",
-      image: "/StainLandingImg.png",
-      gitLink: "https://github.com/Nnamdi-Uzoigwe/Stain-website",
-      url: "https://stain-website.vercel.app/"
+      title: "Lilies Web Application",
+      logo: "/lilies-logo.svg",
+      description: "Lilies is a full-stack food ordering web app built with Next.js, featuring authentication via NextAuth, a dynamic menu with cart and checkout powered by Paystack, and order tracking — all styled with Tailwind CSS. Data is persisted in MongoDB through Next.js API routes, with a clean dashboard experience for managing profiles, orders, and deliveries.",
+      image: "/lilie-web-image.png",
+      gitLink: "https://github.com/Nnamdi-Uzoigwe/Lilies-web",
+      url: "https://lilies-web.vercel.app/"
     },
   ]
 

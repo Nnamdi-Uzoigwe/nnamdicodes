@@ -17,7 +17,7 @@ const ProjectCard = ({logo, title, description, image, url, gitLink}: projectCar
   return (
     <div className="bg-[#f6f6f6] h-auto overflow-hidden dark:bg-[#181818] border px-8 pt-8 pb-8 lg:pb-8 border-gray-200 rounded-[20px] dark:border-[#383737] grid grid-cols-1 lg:grid-cols-2">
       <div className="flex flex-col gap-2">
-        <div className="bg-white px-2 dark:bg-white/80 border border-gray-300 dark:border-[#888]  shadow-inner rounded-xl h-20 flex justify-center items-center w-fit ">
+        <div className="bg-white px-2 dark:bg-white/80 border border-gray-300 dark:border-[#888] overflow-hidden shadow-inner rounded-xl h-20 flex justify-center items-center w-fit ">
         <Image src={logo} alt="react logo" width={70} height={70} />
         </div>
         <h2 className="font-semibold text-xl my-1 lg:text-2xl text-gray-800 dark:text-white">

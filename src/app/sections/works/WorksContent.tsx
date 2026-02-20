@@ -122,8 +122,18 @@ const WorksContent = () => {
       gitLink: "https://github.com/Nnamdi-Uzoigwe/Stain-website",
       url: "https://stain-website.vercel.app/"
     },
-    {
+     {
       id: 5,
+      title: "Lilies Web Application",
+      logo: "/lilies-logo.svg",
+      description: "Lilies is a full-stack food ordering web app built with Next.js, featuring authentication via NextAuth, a dynamic menu with cart and checkout powered by Paystack, and order tracking — all styled with Tailwind CSS. Data is persisted in MongoDB through Next.js API routes, with a clean dashboard experience for managing profiles, orders, and deliveries.",
+      image: "/lilie-web-image.png",
+      stack: ["Next.js", "Next-Auth", "MongoDB", "Paystack API", "TailwindCSS"],
+      gitLink: "https://github.com/Nnamdi-Uzoigwe/Lilies-web",
+      url: "https://lilies-web.vercel.app/"
+    },
+    {
+      id: 6,
       title: "Scam Information System",
       logo: "/scamlogo.png",
       description: "NG Scam Information Database is a web platform built to raise awareness and protect the public from fraudulent activities in Nigeria. The system allows users to report and search scam cases, creating a growing, community-driven database of scam-related information. With React powering the frontend, the platform provides a smooth and responsive user experience, while TailwindCSS ensures a clean, modern, and accessible interface. On the backend, Express manages the server-side logic, while MongoDB and Supabase are leveraged for scalable data storage and real-time access to reported cases, ensuring that information is both reliable and quickly retrievable.",
