@@ -14,21 +14,21 @@ const SelectedProjects = () => {
   const projectsData = [
     {
       id: 1,
+      title: "DeCave Management Website",
+      logo: "/decave-logo.svg",
+      description: "deCave is a premium event management platform centered around Afro-centric culture, nightlife, and community — designing immersive experiences that go beyond just events. Built with Next.js, it showcases upcoming events, a gallery of past editions, and partnership opportunities for brands looking to connect with a culture-driven audience.",
+      image: "/decavemgt-image.png",
+      gitLink: "https://github.com/novtryx/decave",
+      url: "https://decavemgt.com"
+    },
+    {
+      id: 2,
       title: "Novtryx Official Website",
       logo: "/novtryxLogo.png",
       description: "Novtryx is a software development company website designed to showcase modern web and mobile solutions. The site focuses on clean UI, clear service presentation, and smooth user experience, reflecting the company’s commitment to building reliable, scalable digital products.",
       image: "/novtryxImg.png",
       gitLink: "https://github.com/novtryx/novtryx-website",
       url: "https://www.novtryx.com"
-    },
-    {
-      id: 2,
-      title: "Fluorish Fuel Station Application",
-      logo: "/station-logo.png",
-      description: "Still in progress. A role-based web application built to streamline filling station operations. It provides dashboards for managers, cashiers, accountants, supervisors, and attendants to record fuel sales, manage pumps, track lubricant purchases, and monitor stock. The system aims to reduce manual processes and improve operational visibility, and is currently under active development.",
-      image: "/FillingStationImg.png",
-      gitLink: "https://github.com/tgtech123/Filling-Station-system",
-      url: "https://filling-station-system.vercel.app/"
     },
     {
       id: 3,
