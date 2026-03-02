@@ -84,6 +84,16 @@ const WorksContent = () => {
   const projectsData = [
     {
       id: 1,
+      title: "Norwyn Solution Website",
+      logo: "/norwyn-logo.png",
+      description: "Designed and developed a professional website for Norwyn Solution, a London-based investment fraud recovery firm. The site presents complex forensic and legal services in a clear, trust-building layout with strong calls-to-action.",
+      image: "/norwyn-img.png",
+      stack: ["Next.js", "Tailwind", "Resend"],
+      gitLink: "https://github.com/Nnamdi-Uzoigwe/norwyn",
+      url: "https://www.norwynsolution.com/"
+    },
+    {
+      id: 2,
       title: "DeCave Management Website",
       logo: "/decave-logo.svg",
       description: "deCave is a premium event management platform centered around Afro-centric culture, nightlife, and community — designing immersive experiences that go beyond just events. Built with Next.js, it showcases upcoming events, a gallery of past editions, and partnership opportunities for brands looking to connect with a culture-driven audience.",
@@ -93,7 +103,7 @@ const WorksContent = () => {
       url: "https://decavemgt.com"
     },
     {
-      id: 2,
+      id: 3,
       title: "Novtryx Official Website",
       logo: "/novtryxLogo.png",
       description: "Novtryx is a software development company website designed to showcase modern web and mobile solutions. The site focuses on clean UI, clear service presentation, and smooth user experience, reflecting the company’s commitment to building reliable, scalable digital products.",
@@ -103,7 +113,7 @@ const WorksContent = () => {
       url: "https://www.novtryx.com"
     },
     {
-      id: 3,
+      id: 4,
       title: "Fluorish Fuel Station Application",
       logo: "/station-logo.png",
       description: "Still in progress. A role-based web application built to streamline filling station operations. It provides dashboards for managers, cashiers, accountants, supervisors, and attendants to record fuel sales, manage pumps, track lubricant purchases, and monitor stock. The system aims to reduce manual processes and improve operational visibility, and is currently under active development.",
@@ -113,7 +123,7 @@ const WorksContent = () => {
       url: "https://filling-station-system.vercel.app/"
     },
     {
-      id: 4,
+      id: 5,
       title: "Celestia Website",
       logo: "/celestiaLogo.png",
       description: "Celestia is a mini period tracker web application designed to help users monitor their menstrual cycles with ease and accuracy. The platform predicts the next period date, ovulation day, and fertile window, giving users valuable insights into their reproductive health. Built with React and TailwindCSS for a clean and responsive interface, Celestia ensures that users can quickly log and view their cycle information across devices.",
@@ -123,7 +133,7 @@ const WorksContent = () => {
       url: "https://celestia-web-app.vercel.app/"
     },
     {
-      id: 5,
+      id: 6,
       title: "Stain Website Landing Page",
       logo: "/stain-logo.svg",
       description: "Stain is a modern SaaS website design that I implemented using Vue 3 with the Composition API and Tailwind CSS. The project showcases my ability to translate a professional Figma concept into a fully responsive, production-ready front-end.",
@@ -133,7 +143,7 @@ const WorksContent = () => {
       url: "https://stain-website.vercel.app/"
     },
      {
-      id: 6,
+      id: 7,
       title: "Lilies Web Application",
       logo: "/lilies-logo.svg",
       description: "Lilies is a full-stack food ordering web app built with Next.js, featuring authentication via NextAuth, a dynamic menu with cart and checkout powered by Paystack, and order tracking — all styled with Tailwind CSS. Data is persisted in MongoDB through Next.js API routes, with a clean dashboard experience for managing profiles, orders, and deliveries.",
@@ -143,7 +153,7 @@ const WorksContent = () => {
       url: "https://lilies-web.vercel.app/"
     },
     {
-      id: 7,
+      id: 8,
       title: "Scam Information System",
       logo: "/scamlogo.png",
       description: "NG Scam Information Database is a web platform built to raise awareness and protect the public from fraudulent activities in Nigeria. The system allows users to report and search scam cases, creating a growing, community-driven database of scam-related information. With React powering the frontend, the platform provides a smooth and responsive user experience, while TailwindCSS ensures a clean, modern, and accessible interface. On the backend, Express manages the server-side logic, while MongoDB and Supabase are leveraged for scalable data storage and real-time access to reported cases, ensuring that information is both reliable and quickly retrievable.",

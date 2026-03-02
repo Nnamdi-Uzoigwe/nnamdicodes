@@ -14,6 +14,15 @@ const SelectedProjects = () => {
   const projectsData = [
     {
       id: 1,
+      title: "Norwyn Solution Website",
+      logo: "/norwyn-logo.png",
+      description: "Designed and developed a professional website for Norwyn Solution, a London-based investment fraud recovery firm. The site presents complex forensic and legal services in a clear, trust-building layout with strong calls-to-action.",
+      image: "/norwyn-img.png",
+      gitLink: "https://github.com/Nnamdi-Uzoigwe/norwyn",
+      url: "https://www.norwynsolution.com/"
+    },
+    {
+      id: 2,
       title: "DeCave Management Website",
       logo: "/decave-logo.svg",
       description: "deCave is a premium event management platform centered around Afro-centric culture, nightlife, and community — designing immersive experiences that go beyond just events. Built with Next.js, it showcases upcoming events, a gallery of past editions, and partnership opportunities for brands looking to connect with a culture-driven audience.",
@@ -22,7 +31,7 @@ const SelectedProjects = () => {
       url: "https://decavemgt.com"
     },
     {
-      id: 2,
+      id: 3,
       title: "Novtryx Official Website",
       logo: "/novtryxLogo.png",
       description: "Novtryx is a software development company website designed to showcase modern web and mobile solutions. The site focuses on clean UI, clear service presentation, and smooth user experience, reflecting the company’s commitment to building reliable, scalable digital products.",
@@ -30,15 +39,15 @@ const SelectedProjects = () => {
       gitLink: "https://github.com/novtryx/novtryx-website",
       url: "https://www.novtryx.com"
     },
-    {
-      id: 3,
-      title: "Lilies Web Application",
-      logo: "/lilies-logo.svg",
-      description: "Lilies is a full-stack food ordering web app built with Next.js, featuring authentication via NextAuth, a dynamic menu with cart and checkout powered by Paystack, and order tracking — all styled with Tailwind CSS. Data is persisted in MongoDB through Next.js API routes, with a clean dashboard experience for managing profiles, orders, and deliveries.",
-      image: "/lilie-web-image.png",
-      gitLink: "https://github.com/Nnamdi-Uzoigwe/Lilies-web",
-      url: "https://lilies-web.vercel.app/"
-    },
+    // {
+    //   id: 3,
+    //   title: "Lilies Web Application",
+    //   logo: "/lilies-logo.svg",
+    //   description: "Lilies is a full-stack food ordering web app built with Next.js, featuring authentication via NextAuth, a dynamic menu with cart and checkout powered by Paystack, and order tracking — all styled with Tailwind CSS. Data is persisted in MongoDB through Next.js API routes, with a clean dashboard experience for managing profiles, orders, and deliveries.",
+    //   image: "/lilie-web-image.png",
+    //   gitLink: "https://github.com/Nnamdi-Uzoigwe/Lilies-web",
+    //   url: "https://lilies-web.vercel.app/"
+    // },
   ]
 
   useEffect(() => {
