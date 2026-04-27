@@ -39,15 +39,15 @@ const SelectedProjects = () => {
       gitLink: "https://github.com/novtryx/novtryx-website",
       url: "https://www.novtryx.com"
     },
-    // {
-    //   id: 3,
-    //   title: "Lilies Web Application",
-    //   logo: "/lilies-logo.svg",
-    //   description: "Lilies is a full-stack food ordering web app built with Next.js, featuring authentication via NextAuth, a dynamic menu with cart and checkout powered by Paystack, and order tracking — all styled with Tailwind CSS. Data is persisted in MongoDB through Next.js API routes, with a clean dashboard experience for managing profiles, orders, and deliveries.",
-    //   image: "/lilie-web-image.png",
-    //   gitLink: "https://github.com/Nnamdi-Uzoigwe/Lilies-web",
-    //   url: "https://lilies-web.vercel.app/"
-    // },
+    {
+      id: 4,
+      title: "Taski Mobile App",
+      logo: "/taski-logo.png",
+      description: "Taski is a mobile app designed to help users manage their tasks and productivity efficiently. Built with React Native and Expo, it offers a seamless experience across platforms with a focus on simplicity and effectiveness.",
+      image: "/taski-img.png",
+      gitLink: "https://github.com/Nnamdi-Uzoigwe/taski",
+      url: "https://expo.dev/preview/update?message=first+release&updateRuntimeVersion=1.0.0&createdAt=2026-04-24T17%3A01%3A36.879Z&slug=exp&projectId=474413b1-44bc-4325-b21d-508eeef2e04b&group=a1b989ef-5584-4387-852b-a502a6f28b7a"
+    }
   ]
 
   useEffect(() => {
