@@ -103,6 +103,16 @@ const WorksContent = () => {
       gitLink: "https://github.com/Nnamdi-Uzoigwe/Scam-Information-System",
       url: "https://scam-information-system.vercel.app/"
     },
+      {
+      id: 10,
+      title: "Show Trivia",
+      logo: "/show-trivia-logo.png",
+      description: "Show Trivia is a fun and interactive TV show trivia web app that challenges users on popular series like Stranger Things, Breaking Bad, and Money Heist with fast-paced gameplay and instant scoring.",
+      image: "/show-trivia.png",
+      stack: ["Next.js", "Motion", "Next Auth", "MongoDB", "TailwindCSS"],
+      gitLink: "https://github.com/Nnamdi-Uzoigwe/show-trivia",
+      url: "https://show-trivia.vercel.app/"
+    }
   ];
 
   useEffect(() => {
