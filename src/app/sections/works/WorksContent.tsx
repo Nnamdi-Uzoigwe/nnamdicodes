@@ -45,13 +45,13 @@ const WorksContent = () => {
     },
     {
       id: 4,
-      title: "Taski Mobile App",
-      logo: "/taski-logo.png",
-      description: "Taski is a mobile app designed to help users manage their tasks and productivity efficiently. Built with React Native and Expo, it offers a seamless experience across platforms with a focus on simplicity and effectiveness.",
-      image: "/taski-img.png",
-      stack: ["React Native", "Expo", "Nativewind"],
-      gitLink: "https://github.com/Nnamdi-Uzoigwe/taski",
-      url: "https://expo.dev/preview/update?message=first+release&updateRuntimeVersion=1.0.0&createdAt=2026-04-24T17%3A01%3A36.879Z&slug=exp&projectId=474413b1-44bc-4325-b21d-508eeef2e04b&group=a1b989ef-5584-4387-852b-a502a6f28b7a"
+      title: "Bobo Mobile App",
+      logo: "/bobo-logo.png",
+      description: "A modern food delivery mobile app featuring complete onboarding and authentication flows, food discovery, product details, cart, favorites, and checkout experiences. Built with a polished UI supporting dark and light themes, with a focus on smooth navigation and a seamless user experience.",
+      image: "/bobo-img.png",
+      stack: ["React Native", "Expo", "Nest.js", "MongoDB", "Typescript"],
+      gitLink: "https://github.com/Nnamdi-Uzoigwe/bobo-app",
+      url: "https://github.com/Nnamdi-Uzoigwe/bobo-app"
     },
     {
       id: 5,

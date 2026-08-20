@@ -32,15 +32,24 @@ const SelectedProjects = () => {
     },
     {
       id: 3,
+      title: "Bobo Mobile App",
+      logo: "/bobo-logo.png",
+      description: "A modern food delivery mobile app featuring complete onboarding and authentication flows, food discovery, product details, cart, favorites, and checkout experiences. Built with a polished UI supporting dark and light themes, with a focus on smooth navigation and a seamless user experience.",
+      image: "/bobo-img.png",
+      gitLink: "https://github.com/Nnamdi-Uzoigwe/bobo-app",
+      url: "https://github.com/Nnamdi-Uzoigwe/bobo-app"
+    },
+    {
+      id: 4,
       title: "Novtryx Official Website",
       logo: "/novtryxLogo.png",
-      description: "Novtryx is a software development company website designed to showcase modern web and mobile solutions. The site focuses on clean UI, clear service presentation, and smooth user experience, reflecting the company’s commitment to building reliable, scalable digital products.",
+      description: "Novtryx is a software development company website designed to showcase modern web and mobile solutions. The site focuses on clean UI, clear service presentation, and smooth user experience, reflecting the company's commitment to building reliable, scalable digital products.",
       image: "/novtryxImg.png",
       gitLink: "https://github.com/novtryx/novtryx-website",
       url: "https://www.novtryx.com"
     },
     {
-      id: 4,
+      id: 5,
       title: "Show Trivia",
       logo: "/show-trivia-logo.png",
       description: "Show Trivia is a fun and interactive TV show trivia web app that challenges users on popular series like Stranger Things, Breaking Bad, and Money Heist with fast-paced gameplay and instant scoring.",
