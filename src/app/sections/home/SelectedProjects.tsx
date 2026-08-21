@@ -37,7 +37,7 @@ const SelectedProjects = () => {
       description: "A modern food delivery mobile app featuring complete onboarding and authentication flows, food discovery, product details, cart, favorites, and checkout experiences. Built with a polished UI supporting dark and light themes, with a focus on smooth navigation and a seamless user experience.",
       image: "/bobo-img.png",
       gitLink: "https://github.com/Nnamdi-Uzoigwe/bobo-app",
-      url: "https://github.com/Nnamdi-Uzoigwe/bobo-app"
+      url: "https://expo.dev/preview/update?message=Preview+build&updateRuntimeVersion=1.0.0&createdAt=2026-08-21T12%3A00%3A37.822Z&slug=exp&projectId=476434c6-6f82-4892-9cb4-7e15140106c7&group=ef1f8b57-cd83-4de1-85cb-725b12bace5a"
     },
     {
       id: 4,
